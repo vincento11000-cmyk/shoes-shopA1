@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "api/index.php",
+      "use": "@vercel/php",
+      "config": {
+        "installCommand": "composer install"
+      }
+    }
+  ]
+}
