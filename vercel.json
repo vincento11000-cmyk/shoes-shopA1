@@ -1,16 +1,15 @@
 {
   "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.7.0"
+    "api/index.js": {
+      "runtime": "nodejs20.x"
     }
   },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/index.php"
+      "dest": "/api/index.js"
     }
   ],
   "buildCommand": "npm run build",
-  "outputDirectory": "public",
-  "installCommand": "npm install"
+  "outputDirectory": "public"
 }
